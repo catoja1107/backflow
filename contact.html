@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Atlanta Backflow Testing and Installation, LLC</title>
+    <title>Contact Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,16 +13,36 @@
     <link rel="stylesheet" type="text/css" href="./css/common.css" />
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!--<style>
+      #map {
+        width: 500px;
+        height: 400px;
+    }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+			var mapCanvas = document.getElementById('map');
+			var mapOptions = {
+          center: new google.maps.LatLng(37.2346525, -121.8903384),
+          zoom: 21,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+		google.maps.event.addDomListener(window, 'load', initialize);
+	
+	</script>-->
   </head>
 
   <body>
     <nav>
-      <a href="#"><div class="nav name">Atlanta Backflow Testing</div></a>
-      <a href="#"><div class="nav tab" style="margin-left: 45%;">Home</div></a>
+      <a href="./index.html"><div class="nav name">Atlanta Backflow Testing</div></a>
+      <a href="./index.html"><div class="nav tab" style="margin-left: 45%;">Home</div></a>
       <a href="./about.html"><div class="nav tab">About</div></a>
       <a href="./services.html"><div class="nav tab">Services</div></a>
       <a href="./faq.html"><div class="nav tab">FAQ</div></a>
-      <a href="./contact.html"><div class="nav tab">Contact</div></a>
+      <a href="#"><div class="nav tab">Contact</div></a>
     </nav>
 
     <section id="content">
@@ -33,29 +53,18 @@
         <div><img class="pane" src="./img/p4.jpg" /></div>
       </div>
 
-      <div id=panel>
+	<div id=panel>
         <div id="top">
-          <h1 class="title">Welcome to Atlanata Backflow and Testing, LLC</h1>
-          <em class="slogan">Nothing gets by us...</em>
+          <h1 class="title">Contact Us</h1>
         </div>
         <div id="left">
-          <div class="gawp">
-            <img class="pic" src="./img/pic.jpg" />
-            <div class="info">
-              <p style="margin-top: 2em; margin-bottom: 0;">Fully Licensed and Certified</p>
-              <strong>BPAT #02230</strong>
-            </div>
-          </div>
           <p class="call">Give us a call: <em><a class="link" href="tel:7709181203">(770) 918-1203</a></em></p>
         </div>
-
-        <div id="right">
-          <div id="feed">
-            <div class="feed-header"><p class="feed-header-text"><i class="fa fa-facebook-official"></i> - Feed</p></div>
-            <div class="placeholder"><i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
-          </div>
-        </div>
-      </div>
+		<div id="right">
+			<!--<div id="map"></div>-->
+			<p class="call">Location</p>
+			<img src="./img/location.png">
+			<p class="call">204 Camden Industrial Pkwy NW, Conyers, GA 30012</p>
     </section>
 
     <footer>
