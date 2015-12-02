@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./css/common.css" />
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<!--<style>
       #map {
         width: 500px;
@@ -53,18 +54,35 @@
         <div><img class="pane" src="./img/p4.jpg" /></div>
       </div>
 
-	<div id=panel>
+	<div id=panel style="height:1000px;">
         <div id="top">
           <h1 class="title">Contact Us</h1>
         </div>
-        <div id="left">
-          <p class="call">Give us a call: <em><a class="link" href="tel:7709181203">(770) 918-1203</a></em></p>
+        <div id="left" style="margin-left:0; height:809px; border:1px solid black; border-left:0 !important; padding-left:1em; border-top-right-radius:5px; border-bottom-right-radius:5px;">
+          <p class="call">Call Us: <em><a class="link" href="tel:7709181203">(770) 918-1203</a></em></p>
+		  <h2><strong>Email Us: </strong></h2>
+		  <form action="#" method="POST">
+			<p style="font-size:8pt;"><em>All fields marked with "*" are required.</em></p>
+			<em>*</em> Email: <input type="email" maxlength="256" width="100%" style="margin-left:5%; margin-bottom:10px;" required></input>
+			<br \>
+			Name: <input type="text" maxlength="256" width="100%" style="margin-left:6%; margin-bottom:10px;"></input>
+			<br \>
+			<em>*</em> Subject:<input type="text" maxlength="256" style="margin-left:5%; margin-bottom:10px;" required></input>
+			<br \>
+			<em>*</em> Message:<textarea maxlength="1024" style="margin-left:5%; margin-bottom:10px;" required></textarea>
+			</form>
+		  <form action="?" method="POST">
+			<div class="g-recaptcha" data-sitekey="6LfhPBITAAAAAJpQtCHYsSfzii5FhTSl5klCCUb7"></div>
+			<br/>
+			<input type="submit" value="Submit">
+		  </form>
         </div>
 		<div id="right">
-			<!--<div id="map"></div>-->
-			<p class="call">Location</p>
+			<h1><strong>Location</strong></h1>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.8338382665866!2d-84.04385668442391!3d33.687366444316424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5b30d925e0a11%3A0xe1bbcf4a24a6870a!2s204+Camden+Industrial+Pkwy+NW%2C+Conyers%2C+GA+30012!5e0!3m2!1sen!2sus!4v1449022432715" width="700" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
 			<p class="call">204 Camden Industrial Pkwy NW, Conyers, GA 30012</p>
+		</div>
+	</div>
     </section>
 
     <footer>
